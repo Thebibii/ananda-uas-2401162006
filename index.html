@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wisata Kabupaten Agam</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header-content">
+        <div class="header-text">
+          <h1>Destinasi Wisata Kabupaten Agam</h1>
+          <p>Menjelajahi Keindahan Alam, Budaya, dan Pesona Lokal</p>
+        </div>
+        <div class="header-decoration">
+          <div class="decoration-circle"></div>
+          <div class="decoration-circle"></div>
+          <div class="decoration-circle"></div>
+        </div>
+      </div>
+    </header>
+
+    <nav class="navbar">
+      <div class="nav-container">
+        <div class="nav-links">
+          <a href="index.html" class="nav-link active">
+            <span class="nav-icon">🏠</span>
+            Beranda
+          </a>
+          <a href="profil.html" class="nav-link">
+            <span class="nav-icon">👤</span>
+            Profil
+          </a>
+          <a href="kontak.html" class="nav-link">
+            <span class="nav-icon">📞</span>
+            Kontak
+          </a>
+        </div>
+      </div>
+    </nav>
+
+    <div class="search-section">
+      <div class="search-container">
+        <div class="search-box">
+          <input
+            type="text"
+            id="searchInput"
+            placeholder="Cari destinasi wisata..."
+          />
+          <div class="search-icon">🔍</div>
+        </div>
+      </div>
+    </div>
+
+    <main class="main-container">
+      <section class="content" id="destinationList">
+        <!-- Wisata Alam -->
+        <div class="section-header">
+          <h2>🌿 Wisata Alam</h2>
+          <div class="section-line"></div>
+        </div>
+        <div class="gallery">
+          <div class="card" data-category="alam">
+            <div class="card-image">
+              <img src="images/maninjau.jpg" alt="Danau Maninjau" />
+              <div class="card-overlay">
+                <span class="card-category">Alam</span>
+              </div>
+            </div>
+            <div class="card-content">
+              <h3>Danau Maninjau</h3>
+              <p>
+                Danau vulkanik yang memukau dengan pemandangan pegunungan yang
+                menawan
+              </p>
+              <a
+                href="https://maps.app.goo.gl/Rm8ysgaUQUvU16r59"
+                target="_blank"
+                class="card-link"
+              >
+                <span>Lihat Lokasi</span>
+                <span class="link-arrow">→</span>
+              </a>
+            </div>
+          </div>
+
+          <div class="card" data-category="alam">
+            <div class="card-image">
+              <img src="images/kelok44.jpg" alt="Kelok 44" />
+              <div class="card-overlay">
+                <span class="card-category">Alam</span>
+              </div>
+            </div>
+            <div class="card-content">
+              <h3>Kelok 44</h3>
+              <p>
+                Jalan berkelok dengan 44 tikungan yang menawarkan pemandangan
+                spektakuler
+              </p>
+              <a
+                href="https://maps.app.goo.gl/QrkGsFYbmj8vZ7nX9"
+                target="_blank"
+                class="card-link"
+              >
+                <span>Lihat Lokasi</span>
+                <span class="link-arrow">→</span>
+              </a>
+            </div>
+          </div>
+
+          <div class="card" data-category="alam">
+            <div class="card-image">
+              <img src="images/lawang.jpg" alt="Puncak Lawang" />
+              <div class="card-overlay">
+                <span class="card-category">Alam</span>
+              </div>
+            </div>
+            <div class="card-content">
+              <h3>Puncak Lawang</h3>
+              <p>
+                Puncak tertinggi dengan panorama alam yang menakjubkan dan udara
+                sejuk
+              </p>
+              <a
+                href="https://maps.app.goo.gl/kT7W2cY4g6LUGNNu5"
+                target="_blank"
+                class="card-link"
+              >
+                <span>Lihat Lokasi</span>
+                <span class="link-arrow">→</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Wisata Religi & Budaya -->
+        <div class="section-header">
+          <h2>🕌 Wisata Religi dan Budaya</h2>
+          <div class="section-line"></div>
+        </div>
+        <div class="gallery">
+          <div class="card" data-category="religi">
+            <div class="card-image">
+              <img src="images/bayur.jpg" alt="Masjid Raya Bayur" />
+              <div class="card-overlay">
+                <span class="card-category">Religi</span>
+              </div>
+            </div>
+            <div class="card-content">
+              <h3>Masjid Raya Bayur</h3>
+              <p>
+                Masjid bersejarah dengan arsitektur tradisional Minangkabau yang
+                megah
+              </p>
+              <a
+                href="https://maps.app.goo.gl/5ZB9YYGM1FAh5MnF9"
+                target="_blank"
+                class="card-link"
+              >
+                <span>Lihat Lokasi</span>
+                <span class="link-arrow">→</span>
+              </a>
+            </div>
+          </div>
+
+          <div class="card" data-category="budaya">
+            <div class="card-image">
+              <img src="images/buya.jpg" alt="Museum Buya Hamka" />
+              <div class="card-overlay">
+                <span class="card-category">Budaya</span>
+              </div>
+            </div>
+            <div class="card-content">
+              <h3>Museum Buya Hamka</h3>
+              <p>Museum yang menyimpan sejarah dan karya-karya Buya Hamka</p>
+              <a
+                href="https://maps.app.goo.gl/L48xKnPDp5juy8gM8"
+                target="_blank"
+                class="card-link"
+              >
+                <span>Lihat Lokasi</span>
+                <span class="link-arrow">→</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Wisata Buatan dan Edukasi -->
+        <div class="section-header">
+          <h2>🎡 Wisata Buatan dan Edukasi</h2>
+          <div class="section-line"></div>
+        </div>
+        <div class="gallery">
+          <div class="card" data-category="edukasi">
+            <div class="card-image">
+              <img src="images/green-talao.jpg" alt="Green Talao Park" />
+              <div class="card-overlay">
+                <span class="card-category">Edukasi</span>
+              </div>
+            </div>
+            <div class="card-content">
+              <h3>Green Talao Park</h3>
+              <p>
+                Taman rekreasi keluarga dengan berbagai wahana dan fasilitas
+                edukasi
+              </p>
+              <a
+                href="https://maps.app.goo.gl/Hykvrcy1GzLJ9FHG8"
+                target="_blank"
+                class="card-link"
+              >
+                <span>Lihat Lokasi</span>
+                <span class="link-arrow">→</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Instagramable -->
+        <div class="section-header">
+          <h2>📸 Instagramable & Alternatif</h2>
+          <div class="section-line"></div>
+        </div>
+        <div class="gallery">
+          <div class="card" data-category="instagramable">
+            <div class="card-image">
+              <img src="images/mande.jpg" alt="Puncak Mandeh Gadang" />
+              <div class="card-overlay">
+                <span class="card-category">Foto</span>
+              </div>
+            </div>
+            <div class="card-content">
+              <h3>Puncak Mandeh Gadang</h3>
+              <p>
+                Spot foto terbaik dengan latar belakang pemandangan yang
+                Instagram-worthy
+              </p>
+              <a
+                href="https://maps.app.goo.gl/WKXc3nX12zD3qufb9"
+                target="_blank"
+                class="card-link"
+              >
+                <span>Lihat Lokasi</span>
+                <span class="link-arrow">→</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <aside class="sidebar">
+        <div class="widget">
+          <h3>🎯 Panduan Wisata</h3>
+          <ul class="widget-list">
+            <li><a href="#" class="widget-link">📍 Rute Angkot</a></li>
+            <li><a href="#" class="widget-link">🎫 Tiket Masuk</a></li>
+            <li><a href="#" class="widget-link">📷 Tips Fotografi</a></li>
+            <li><a href="#" class="widget-link">🏨 Penginapan</a></li>
+          </ul>
+        </div>
+
+        <div class="widget">
+          <h3>📊 Statistik</h3>
+          <div class="stats">
+            <div class="stat-item">
+              <span class="stat-number">12+</span>
+              <span class="stat-label">Destinasi</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-number">4</span>
+              <span class="stat-label">Kategori</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="widget">
+          <h3>🌟 Populer</h3>
+          <div class="popular-list">
+            <div class="popular-item">
+              <span class="popular-rank">1</span>
+              <span class="popular-name">Danau Maninjau</span>
+            </div>
+            <div class="popular-item">
+              <span class="popular-rank">2</span>
+              <span class="popular-name">Kelok 44</span>
+            </div>
+            <div class="popular-item">
+              <span class="popular-rank">3</span>
+              <span class="popular-name">Puncak Lawang</span>
+            </div>
+          </div>
+        </div>
+      </aside>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h4>Wisata Agam</h4>
+          <p>Menjelajahi keindahan Kabupaten Agam bersama kami</p>
+        </div>
+        <div class="footer-section">
+          <h4>Kontak</h4>
+          <p>📧 info@agamwisata.id</p>
+          <p>📱 @agamwisata</p>
+        </div>
+        <div class="footer-section">
+          <h4>Tahun</h4>
+          <p>© 2025 Wisata Agam</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
