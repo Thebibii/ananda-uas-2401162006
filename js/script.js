@@ -54,41 +54,6 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
   });
 });
 
-// Add loading animation for images
-document.addEventListener("DOMContentLoaded", () => {
-  const images = document.querySelectorAll(".card img");
-
-  images.forEach((img) => {
-    img.addEventListener("load", function () {
-      this.style.opacity = "1";
-    });
-
-    // Set initial opacity
-    img.style.opacity = "0";
-    img.style.transition = "opacity 0.3s ease";
-  });
-});
-
-// Add intersection observer for card animations
-const observerOptions = {
-  threshold: 0.1,
-  rootMargin: "0px 0px -50px 0px",
-};
-
-const observer = new IntersectionObserver((entries) => {
-  entries.forEach((entry) => {
-    if (entry.isIntersecting) {
-      entry.target.style.animationDelay = Math.random() * 0.3 + "s";
-      entry.target.classList.add("animate-in");
-    }
-  });
-}, observerOptions);
-
-// Observe all cards
-cards.forEach((card) => {
-  observer.observe(card);
-});
-
 // Add click tracking for analytics (optional)
 cards.forEach((card) => {
   const link = card.querySelector(".card-link");
